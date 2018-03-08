@@ -1,0 +1,17 @@
+<mat-card *ngIf="workouts?.length == 0">
+    <mat-card-title>No Workouts :(</mat-card-title>
+    <mat-card-content>
+        A workout is a collection of excercises that are usually performed during the same workout session. 
+        Click the plus button to create a new workout!
+    </mat-card-content>
+</mat-card>
+
+<mat-nav-list *ngIf="workouts?.length > 0">
+    <a mat-list-item *ngFor="let workout of workouts" [routerLink]="['./', workout.id]">
+        {{workout.name}}
+    </a>
+</mat-nav-list>
+
+<button mat-fab>
+    <mat-icon>add</mat-icon>
+</button>

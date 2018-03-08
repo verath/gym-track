@@ -1,0 +1,9 @@
+mat-card {
+    margin: 8px 0;
+}
+
+button[mat-fab] {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
