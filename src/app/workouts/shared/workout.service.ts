@@ -5,7 +5,6 @@ import { of } from 'rxjs/observable/of';
 
 import GymTrack from '../../core/models/gym-track.model';
 import Workout from '../../core/models/workout.model';
-import appState from '../../core/app-state';
 
 
 @Injectable()
@@ -18,7 +17,7 @@ export class WorkoutService {
     }
 
     getWorkout(id: string) {
-        const workout = this.appState.workouts.find(workout => workout.id === id);
+        const workout = this.appState.workouts.find(w => w.id === id);
         return of(workout);
     }
 

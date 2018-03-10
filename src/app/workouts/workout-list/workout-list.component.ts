@@ -19,7 +19,7 @@ export class WorkoutListComponent implements OnInit {
 
   getWorkouts(): void {
     this.workoutService.getWorkouts()
-      .subscribe(workouts => { this.workouts = workouts });
+      .subscribe(workouts => { this.workouts = workouts; });
   }
 
 }

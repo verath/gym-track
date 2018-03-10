@@ -19,7 +19,7 @@ export class WorkoutDetailComponent implements OnInit {
     private workoutService: WorkoutService) { }
 
   ngOnInit() {
-    this.getWorkout()
+    this.getWorkout();
   }
 
   getWorkout(): void {
