@@ -3,7 +3,7 @@ import Workout from './models/workout.model';
 
 const workouts = [];
 // workouts.push(new Workout("Push"));
-// workouts.push(new Workout("Legs"));
+workouts.push(new Workout('Legs'));
 
 const appState: GymTrack = new GymTrack(workouts, [], null);
 

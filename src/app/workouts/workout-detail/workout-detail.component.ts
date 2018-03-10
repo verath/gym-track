@@ -23,9 +23,10 @@ export class WorkoutDetailComponent implements OnInit {
   }
 
   getWorkout(): void {
-    const workoutId = this.route.snapshot.paramMap.get('workoutId');
-    this.workoutService.getWorkout(workoutId)
-      .subscribe(workout => { this.workout = workout; });
+    this.route.data
+      .subscribe((data: { workout: Workout }) => {
+        this.workout = data.workout;
+      });
   }
 
 }

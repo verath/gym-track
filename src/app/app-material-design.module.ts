@@ -9,8 +9,23 @@ import {
     MatToolbarModule
 } from '@angular/material';
 
+
 @NgModule({
-    imports: [MatButtonModule, MatCardModule, MatListModule, MatIconModule, MatSidenavModule, MatToolbarModule],
-    exports: [MatButtonModule, MatCardModule, MatListModule, MatIconModule, MatSidenavModule, MatToolbarModule],
+    imports: [
+        MatButtonModule,
+        MatCardModule,
+        MatListModule,
+        MatIconModule,
+        MatSidenavModule,
+        MatToolbarModule,
+    ],
+    exports: [
+        MatButtonModule,
+        MatCardModule,
+        MatListModule,
+        MatIconModule,
+        MatSidenavModule,
+        MatToolbarModule,
+    ],
 })
 export class AppMaterialDesignModule { }

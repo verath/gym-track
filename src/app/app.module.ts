@@ -17,10 +17,11 @@ import { AppComponent } from './app.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppMaterialDesignModule,
-    AppRoutingModule,
     // Feature modules
     CoreModule,
     WorkoutsModule,
+    // App routing
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
