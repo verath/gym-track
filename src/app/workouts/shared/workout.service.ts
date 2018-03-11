@@ -4,8 +4,8 @@ import { of } from 'rxjs/observable/of';
 import 'rxjs/add/operator/delay';
 
 
-import GymTrack from '../../shared/models/gym-track.model';
-import Workout from '../../shared/models/workout.model';
+import GymTrack from '../../core/models/gym-track.model';
+import Workout from '../../core/models/workout.model';
 
 
 @Injectable()

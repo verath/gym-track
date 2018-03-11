@@ -28,4 +28,4 @@ import {
         MatToolbarModule,
     ],
 })
-export class AppMaterialDesignModule { }
+export class AppMaterialModule { }

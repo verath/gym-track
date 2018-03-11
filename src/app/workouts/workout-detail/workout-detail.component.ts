@@ -4,7 +4,7 @@ import { map, switchMap } from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { WorkoutService } from '../shared/workout.service';
-import Workout from '../../shared/models/workout.model';
+import Workout from '../../core/models/workout.model';
 
 @Component({
   templateUrl: './workout-detail.component.html',
