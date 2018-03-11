@@ -8,6 +8,13 @@ import { AppMaterialModule } from './app-material.module';
     CommonModule,
     AppMaterialModule,
   ],
-  declarations: [TitleToolbarComponent]
+  declarations: [
+    TitleToolbarComponent
+  ],
+  exports: [
+    CommonModule,
+    AppMaterialModule,
+    TitleToolbarComponent,
+  ]
 })
 export class SharedModule { }
