@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { WorkoutService } from '../shared/workout.service';
-import Workout from '../../core/models/workout.model';
+import Workout from '../../shared/models/workout.model';
 
 @Component({
   templateUrl: './workout-list.component.html',

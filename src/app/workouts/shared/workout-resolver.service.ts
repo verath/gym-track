@@ -5,7 +5,7 @@ import 'rxjs/add/observable/empty';
 import { Injectable } from '@angular/core';
 import { WorkoutService } from './workout.service';
 import { Router, Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
-import Workout from '../../core/models/workout.model';
+import Workout from '../../shared/models/workout.model';
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()

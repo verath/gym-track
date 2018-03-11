@@ -7,11 +7,3 @@
     left: 0;
     right: 0;
 }
-
-.toolbar-app-name {
-    margin-left: 8px;
-}
-
-mat-sidenav-container {
-    flex: 1;
-}

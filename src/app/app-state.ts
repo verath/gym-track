@@ -1,5 +1,5 @@
-import GymTrack from './models/gym-track.model';
-import Workout from './models/workout.model';
+import GymTrack from './shared/models/gym-track.model';
+import Workout from './shared/models/workout.model';
 
 const workouts = [];
 // workouts.push(new Workout("Push"));
