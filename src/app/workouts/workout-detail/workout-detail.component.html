@@ -1,6 +1,5 @@
-<app-title-toolbar></app-title-toolbar>
+<app-title-toolbar [title]="workout.name" (back)="onNavigateBack()"></app-title-toolbar>
 
-<div *ngIf="workout">
-    <h1>{{workout.name}}</h1>
-    {{workout.id}}
+<div>
+    <p>Workout id: {{workout.id}}</p>
 </div>

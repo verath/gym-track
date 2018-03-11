@@ -2,7 +2,7 @@ import { pipe } from 'rxjs/util/pipe';
 import { map, switchMap } from 'rxjs/operators';
 
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { WorkoutService } from '../shared/workout.service';
 import Workout from '../../core/models/workout.model';
 
@@ -16,17 +16,22 @@ export class WorkoutDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private workoutService: WorkoutService) { }
 
   ngOnInit() {
     this.getWorkout();
   }
 
-  getWorkout(): void {
+  private getWorkout(): void {
     this.route.data
       .subscribe((data: { workout: Workout }) => {
         this.workout = data.workout;
       });
+  }
+
+  onNavigateBack() {
+    this.router.navigate(['../']);
   }
 
 }

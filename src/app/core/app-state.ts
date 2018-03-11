@@ -2,8 +2,9 @@ import GymTrack from './models/gym-track.model';
 import Workout from './models/workout.model';
 
 const workouts = [];
-// workouts.push(new Workout("Push"));
-workouts.push(new Workout('Legs'));
+for (let i = 0; i < 30; i++) {
+    workouts.push(new Workout(`Workout ${i}`));
+}
 
 const appState: GymTrack = new GymTrack(workouts, [], null);
 
